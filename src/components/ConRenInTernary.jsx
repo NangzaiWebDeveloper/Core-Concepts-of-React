@@ -1,15 +1,15 @@
 
 const ConRenInTernary = () => {
 
-    let mark = 70;
+    let status = true;
 
     return (
         <div>
             {
-                mark>=80?
-                <h1>Brilliant Result</h1>
+                status?
+                <h1>Logout</h1>
                 :
-                <h1>Avarage Result</h1>
+                <h1>Login</h1>
             }
         </div>
     );
