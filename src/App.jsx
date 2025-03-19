@@ -6,6 +6,8 @@ import ConRenLogicalAndAnd from "./components/ConRenLogicalAndAnd"
 import Demo from "./components/Demo"
 import ImmediatelyInvokedFun from "./components/immediatelyInvokedFun"
 import LoopInsideJsx from "./components/LoopInsideJsx"
+import PropsTopic from "./components/ParentAndChildWithProps/PropsTopic"
+
 
 function App() {
 
@@ -28,7 +30,10 @@ function App() {
         {/* <ConRenLogicalAndAnd/> */}
 
         {/* conditional rendering using Immediately invoke function */}
-        <ConRenInInvokeFun/>
+        {/* <ConRenInInvokeFun/> */}
+
+        {/* know about how to data pass Parent component to Child component BY props */}
+        <PropsTopic title="This is Props" description="In details how to pass props"/>
       </>
   )
 }

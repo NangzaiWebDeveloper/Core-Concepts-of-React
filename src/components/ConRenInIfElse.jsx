@@ -3,7 +3,7 @@
 // EX : 01
 // It is good for application,
 
-const LoginStatusBtn =(status)=>{//here we set our condition
+const handleLoginStatusBtn =(status)=>{//here we set our condition
     if(status){
         return <button>LogIn Btn</button>
     }
@@ -16,7 +16,7 @@ const ConRenInIfElse = () => {
     return (
         <div>
             <h3>LogIn Button</h3>
-            {LoginStatusBtn(false)} 
+            {handleLoginStatusBtn(false)} 
         </div>
     )            
     };
