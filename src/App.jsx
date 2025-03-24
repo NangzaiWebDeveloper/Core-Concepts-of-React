@@ -1,3 +1,5 @@
+import ClickEventFunction from "./components/ClickEvent/ClickEventFunction"
+import FormSubmitPart from "./components/ClickEvent/FormSubmitPart"
 import ConRenInIfElse from "./components/ConRenInIfElse"
 import ConRenInInvokeFun from "./components/ConRenInInvokeFun"
 import ConRenInSwitchStatement from "./components/ConRenInSwitchStatement"
@@ -9,6 +11,9 @@ import LoopInsideJsx from "./components/LoopInsideJsx"
 import PassingDataByFunction from "./components/ParentAndChildWithProps/PassingDataByFunction"
 import PassingDataByProps from "./components/ParentAndChildWithProps/PassingDataByProps"
 import PropsTopic from "./components/ParentAndChildWithProps/PropsTopic"
+import AttributeWithUseRef from "./components/ReactHook/AttributeWithUseRef"
+import UseRef from "./components/ReactHook/UseRef"
+import UseRefInInput from "./components/ReactHook/UseRefInInput"
 
 
 function App() {
@@ -21,9 +26,9 @@ function App() {
   //   hometown : "Moulvibazar",
   // }
 
-  const btnClick =()=>{
-    alert("Hello Nangzai")
-  }
+  // const btnClick =()=>{
+  //   alert("Hello Nangzai")
+  // }
 
   return (  
       <>
@@ -55,7 +60,24 @@ function App() {
         {/* <PassingDataByProps item ={itemObj}/> */}
 
         {/* passing Function data by props */}
-        <PassingDataByFunction childClickBtn={btnClick} />
+        {/* <PassingDataByFunction childClickBtn={btnClick} /> */}
+
+        {/* Click Event Function */}
+        {/* <ClickEventFunction/> */}
+
+        {/* input form submit */}
+        {/* <FormSubmitPart/> */}
+
+        {/* React Hooks  */}
+
+        {/*change innerText/innerHTML by useRef method */}
+        {/* <UseRef/> */}
+
+        {/*change Attributes value by useRef method*/}
+        {/* <AttributeWithUseRef/> */}
+
+        {/*using useRef in input element*/}
+        <UseRefInInput/>
       </>
   )
 }
