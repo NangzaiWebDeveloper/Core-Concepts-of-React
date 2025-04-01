@@ -12,6 +12,8 @@ import PassingDataByFunction from "./components/ParentAndChildWithProps/PassingD
 import PassingDataByProps from "./components/ParentAndChildWithProps/PassingDataByProps"
 import PropsTopic from "./components/ParentAndChildWithProps/PropsTopic"
 import AttributeWithUseRef from "./components/ReactHook/AttributeWithUseRef"
+import ExpensiveComputation from "./components/ReactHook/ExpensiveComputation"
+import MutableValue from "./components/ReactHook/MutableValue"
 import UseRef from "./components/ReactHook/UseRef"
 import UseRefInInput from "./components/ReactHook/UseRefInInput"
 
@@ -77,7 +79,18 @@ function App() {
         {/* <AttributeWithUseRef/> */}
 
         {/*using useRef in input element*/}
-        <UseRefInInput/>
+        {/* <UseRefInInput/> */}
+
+        {/*using useRef control CSS class         !!! this is not completed for tailwind issue*/}   
+        {/* <UseRefControlCss/> */}
+
+        {/* using useRef create Persisted Mutable Value */}
+        {/* <MutableValue/> */}
+
+        {/* useRef Caching Expensive Computation //// means API call 1 times not call again or re-render*/}
+        <ExpensiveComputation/>
+
+
       </>
   )
 }

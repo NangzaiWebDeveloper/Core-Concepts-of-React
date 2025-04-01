@@ -5,7 +5,7 @@ const UseRefInInput = () => {
     // let firstName = useRef()
     // let lastName = useRef()
     let firstName, lastName = useRef();
-    
+
     const handleGetUserValue =()=>{
         // let fName = firstName.current.value;
         let fName = firstName.value;
