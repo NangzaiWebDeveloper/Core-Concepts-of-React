@@ -5,36 +5,36 @@
 //     complete, so you don't want to re-fetch the data every time the component renders. Instead, you can use
 //     useRef() to cache the result of the API call.
 
-// import React, { useRef } from 'react';
+import React, { useRef } from 'react';
 
-// const ExpensiveComputation = () => {
+const ExpensiveComputation = () => {
 
-//     // store or hold "API data" 
-//     const holdApiData = useRef(null) 
+    // store or hold "API data" 
+    const holdApiData = useRef(null) 
 
-//     const myPera = useRef(null)
+    const myPera = useRef(null)
 
-//     // call "API data"
-//     const fetchData = async ()=>{
-//         const response = await fetch("https://dummyjson.com/products");
-//         holdApiData.current = await response.json()
-//     }
+    // call "API data"
+    const fetchData = async ()=>{
+        const response = await fetch("https://dummyjson.com/products");
+        holdApiData.current = await response.json()
+    }
 
-//     // show API data 
-//     const showApiData =()=>{
-//         myPera.current.innerText =JSON.stringify(holdApiData.current)
-//     }
+    // show API data 
+    const showApiData =()=>{
+        myPera.current.innerText =JSON.stringify(holdApiData.current)
+    }
 
-//     return (
-//         <div>
-//             <p ref={myPera}></p>
-//             <button onClick={fetchData}>Call API</button>
-//             <button onClick={showApiData}>Show data</button>
-//         </div>
-//     );
-// };
+    return (
+        <div>
+            <p ref={myPera}></p>
+            <button onClick={fetchData}>Call API</button>
+            <button onClick={showApiData}>Show data</button>
+        </div>
+    );
+};
 
-// export default ExpensiveComputation;
+export default ExpensiveComputation;
 
 
 
