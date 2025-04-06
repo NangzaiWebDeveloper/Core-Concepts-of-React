@@ -14,8 +14,11 @@ import PropsTopic from "./components/ParentAndChildWithProps/PropsTopic"
 import AttributeWithUseRef from "./components/ReactHook/AttributeWithUseRef"
 import ExpensiveComputation from "./components/ReactHook/ExpensiveComputation"
 import MutableValue from "./components/ReactHook/MutableValue"
+import FetchApiByUseEffect from "./components/ReactHook/UseEffectMethod/FetchApiByUseEffect"
+import HelloUseEffect from "./components/ReactHook/UseEffectMethod/HelloUseEffect"
 import UseRef from "./components/ReactHook/UseRef"
 import UseRefInInput from "./components/ReactHook/UseRefInInput"
+import FormManageByUseState from "./components/ReactHook/UseStateMethod/FormManageByUseState"
 import HelloUseState from "./components/ReactHook/UseStateMethod/HelloUseState"
 import ImmutableObjectUseState from "./components/ReactHook/UseStateMethod/ImmutableObjectUseState"
 import ToDoWithUseState from "./components/ReactHook/UseStateMethod/ToDoWithUseState"
@@ -103,7 +106,19 @@ function App() {
         {/* <ImmutableObjectUseState/> */}
 
         {/* TO-DO application with useState */}
-        <ToDoWithUseState/>
+        {/* <ToDoWithUseState/> */}
+
+        {/* FORM manage by useState */}
+        {/* <FormManageByUseState/> */}
+
+        {/* ....useEffect() method is part of React Hook....  */}
+
+        {/* <HelloUseEffect/> */}
+
+        {/* Call and Fetch API data by UseEffect  */}
+        {/* <FetchApiByUseEffect/> */}
+
+        {/* call API by Promises style in UseEffect((), []) */}
 
       </>
   )
