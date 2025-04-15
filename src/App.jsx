@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ClickEventFunction from "./components/ClickEvent/ClickEventFunction"
 import FormSubmitPart from "./components/ClickEvent/FormSubmitPart"
 import ConRenInIfElse from "./components/ConRenInIfElse"
@@ -14,6 +15,7 @@ import PropsTopic from "./components/ParentAndChildWithProps/PropsTopic"
 import AttributeWithUseRef from "./components/ReactHook/AttributeWithUseRef"
 import ExpensiveComputation from "./components/ReactHook/ExpensiveComputation"
 import MutableValue from "./components/ReactHook/MutableValue"
+import AsyncAwaitWithUseEffect from "./components/ReactHook/UseEffectMethod/AsyncAwaitWithUseEffect"
 import FetchApiByUseEffect from "./components/ReactHook/UseEffectMethod/FetchApiByUseEffect"
 import HelloUseEffect from "./components/ReactHook/UseEffectMethod/HelloUseEffect"
 import UseRef from "./components/ReactHook/UseRef"
@@ -22,6 +24,13 @@ import FormManageByUseState from "./components/ReactHook/UseStateMethod/FormMana
 import HelloUseState from "./components/ReactHook/UseStateMethod/HelloUseState"
 import ImmutableObjectUseState from "./components/ReactHook/UseStateMethod/ImmutableObjectUseState"
 import ToDoWithUseState from "./components/ReactHook/UseStateMethod/ToDoWithUseState"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Product from "./pages/Product"
+import Document from "./Pages/Document"
+import NotFound from "./pages/NotFound"
+
+
 
 
 function App() {
@@ -118,7 +127,22 @@ function App() {
         {/* Call and Fetch API data by UseEffect  */}
         {/* <FetchApiByUseEffect/> */}
 
-        {/* call API by Promises style in UseEffect((), []) */}
+        {/* Call API by Async Await in UseEffect((), []) */}
+        {/* <AsyncAwaitWithUseEffect/> */}
+
+        {/* React Router Dom */}
+
+        <BrowserRouter>
+          <Routes>
+             <Route path="/" element={<Home/>} />
+             <Route path="/about" element={<About/>} />
+             <Route path="/product" element={<Product/>} />
+             <Route path="/document" element={<Document/>} />
+             <Route path="*" element={<NotFound/>} />
+          </Routes>
+        </BrowserRouter>
+
+
 
       </>
   )

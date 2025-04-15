@@ -8,7 +8,7 @@ const FetchApiByUseEffect = () => {
         fetch("https://dummyjson.com/test")//call API by Promises style in UseEffect((), [])
         .then(response => response.json())
         .then(json => setData(json))
-    }, [])
+    }, [data])
 
     return (
         <div>
